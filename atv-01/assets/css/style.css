@@ -50,7 +50,7 @@ body.escuro .content-section {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
-/* Lista de Habilidades */
+/* Lista de Habilidades - Padrão (Claro) */
 .skills-list {
     list-style: none;
     padding: 0;
@@ -63,14 +63,22 @@ body.escuro .content-section {
 .skills-list li {
     padding: 5px 10px;
     border-radius: 4px;
-    background-color: #007bff; /* Cor de destaque */
+    background-color: #007bff; /* Cor de destaque azul (Claro) */
     color: white;
+    transition: background-color 0.5s, color 0.5s; /* Adicionado para transição suave */
 }
 
+/* 🌙 Lista de Habilidades - Tema Escuro */
+body.escuro .skills-list li {
+    background-color: #9932cc; /* Roxo mais claro para contraste */
+    color: #121212; /* Texto escuro para melhor legibilidade no fundo claro da tag */
+}
+/* FIM da alteração nas habilidades */
 
-/* ⚪ Botão */
+
+/* ⚪ Botão - Estilo padrão (Claro) */
 button {
-    background-color: #007bff;
+    background-color: #007bff; /* Azul padrão */
     color: white;
     border: none;
     padding: 12px 24px;
@@ -82,8 +90,19 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Azul mais escuro no hover (claro) */
 }
+
+/* 🌙 Botão - Estilo no Tema Escuro (Aplicação a TODOS os botões) */
+body.escuro button {
+    background-color: #6a0dad; /* Roxo vibrante */
+    color: #f2f2f2; /* Cor de texto claro */
+}
+
+body.escuro button:hover {
+    background-color: #9932cc; /* Roxo mais claro no hover (escuro) */
+}
+/* FIM da alteração no botão */
 
 img {
     width: 20%;

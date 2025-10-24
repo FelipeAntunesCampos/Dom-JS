@@ -18,7 +18,7 @@ botao.addEventListener("click", () => {
         titulo.textContent = "Felipe Antunes Campos ☀️"; // Atualiza o título no modo claro
         botao.textContent = "Ativar modo escuro 🌙";
     }
-});
+});     
 
 btnTrabalho.addEventListener("click", () => {
     descricao.textContent = "Você está em local de trabalho, sentindo o estress.";
