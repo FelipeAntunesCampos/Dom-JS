@@ -1,0 +1,98 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout principal */
+main {
+    max-width: 800px; /* Adicionado max-width para melhor leitura */
+    margin: 50px auto; /* Centraliza e adiciona margem superior */
+    padding: 20px;
+}
+
+/* ☀️ Tema Claro */
+body.claro {
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* 🌙 Tema Escuro */
+body.escuro {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+
+/* 🍄 Estilo do título */
+h1 {
+    transition: color 0.4s;
+    margin-bottom: 5px;
+}
+
+#subtitulo {
+    margin-top: 0;
+}
+
+/* Estilos de Seção de Conteúdo */
+.content-section {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    /* Transição suave de cor de fundo (para o body.escuro ou body.claro funcionar) */
+    background-color: inherit; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra simples */
+    text-align: left;
+}
+body.escuro .content-section {
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Lista de Habilidades */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Alinha à esquerda */
+}
+
+.skills-list li {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #007bff; /* Cor de destaque */
+    color: white;
+}
+
+
+/* ⚪ Botão */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: transform 0.5s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
